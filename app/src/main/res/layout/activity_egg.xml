@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/eggLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/egg_gif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/egg_gif" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:alpha="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/egg_text"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="10"
+                android:textColor="#100000"
+                android:textColorHint="#100000"
+                android:textSize="20sp"
+                />
+
+            <Button
+                android:id="@+id/egg_next"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.75"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonstyle"
+                android:text="NEXT"
+                android:visibility="invisible"/>
+            <Button
+                android:id="@+id/egg_back"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.75"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonstyle"
+                android:text="BACK"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
